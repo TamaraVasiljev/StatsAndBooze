@@ -6,6 +6,7 @@ To install the latest Version
 install.packages("StatsandBooze")
 
 # Loading the Package
+To load this package
 Library(StatsandBooze)
 
 # Package Version
@@ -14,7 +15,7 @@ packageVersion("StatsandBooze")
 
 # Features
 1. The functionalities of the newly created package "StatsAndBooze" are the modification of dates and times.
-2. It can be used to define the order of days.
+2. It can be used to define the sequence of days.
 3. It can be used to automatically convert the strings into corresponding dates.
 
 # Contributors
