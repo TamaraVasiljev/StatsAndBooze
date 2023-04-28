@@ -3,14 +3,17 @@ StatsandBooze is an R package designed to handle any type of dataset where dates
 
 # Installation Process
 To install the latest Version
+
 install.packages("StatsandBooze")
 
 # Loading the Package
 To load this package
+
 Library(StatsandBooze)
 
 # Package Version
 To check the version of package
+
 packageVersion("StatsandBooze")
 
 # Features
