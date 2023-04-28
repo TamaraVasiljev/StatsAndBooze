@@ -18,9 +18,10 @@ packageVersion("StatsandBooze")
 3. It can be used to automatically convert the strings into corresponding dates.
 
 # Contributors
-Authors@R: person("Valentina", "Zangirolami", email = "v.zangirolami@campus.unimib.it",
+Authors@R: 
+1. person("Valentina", "Zangirolami", email = "v.zangirolami@campus.unimib.it",
   role = c("aut", "cre"))
-person("Tamara", "vasiljev", email = "t.vasiljev@campus.unimib.it", 
+2. person("Tamara", "vasiljev", email = "t.vasiljev@campus.unimib.it", 
   role = c("aut"))
-person("Muhammad Amir", "Saeed", email = "m.saeed@campus.unimib.it", 
+3. person("Muhammad Amir", "Saeed", email = "m.saeed@campus.unimib.it", 
   role = c("aut"))
