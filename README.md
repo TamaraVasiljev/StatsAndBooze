@@ -25,8 +25,3 @@ Authors@R:
   role = c("aut"))
 3. person("Muhammad Amir", "Saeed", email = "m.saeed@campus.unimib.it", 
   role = c("aut"))
-<a href = "https://github.com/TamaraVasiljev/contributors">
-  <img src = "https://contrib.rocks/image?repo = GitHub_TamaraVasiljev/repository_StatsAndBooze"/>
-</a>
-
-Made with [contributors-img](https://contrib.rocks).
