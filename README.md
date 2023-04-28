@@ -1,5 +1,5 @@
 # StatsAndBooze
-StatsandBooze is an R-package developed to handle any type of data sets where Dates and Times are needed to be observed.  It can be used to find the suitable date for Happy Hours with the given data set. It can be used for the extension of "parse_dates" function, so that we can use the time intervals instead of single dates. This package allows us to make the specification of weekdays instead of the numerical data.  
+StatsandBooze is an R package designed to handle any type of dataset where dates and times need to be observed. It can be used to find the appropriate date for Happy Hours with the given datasets. It can be used for extending the "parse_dates" function so that we can use the time intervals instead of single dates. This package allows to specify days of the week instead of numeric dates.
 
 # Installation Process
 To install the latest Version
@@ -12,3 +12,15 @@ Library(StatsandBooze)
 To check the version of package
 packageVersion("StatsandBooze")
 
+# Features
+1. The functionalities of the newly created package "StatsAndBooze" are the modification of dates and times.
+2. It can be used to define the order of days.
+3. It can be used to automatically convert the strings into corresponding dates.
+
+# Contributors
+Authors@R: person("Valentina", "Zangirolami", email = "v.zangirolami@campus.unimib.it",
+  role = c("aut", "cre"))
+person("Tamara", "vasiljev", email = "t.vasiljev@campus.unimib.it", 
+  role = c("aut"))
+person("Muhammad Amir", "Saeed", email = "m.saeed@campus.unimib.it", 
+  role = c("aut"))
