@@ -1,12 +1,17 @@
 #' Parse string dates into Dates
 #'
-#' @param x A list of character dates
+#' @param x A list of people together with availability dates (to have a beer!).
+#' Dates could be expressed as date, name of week day or interval of dates.
 #'
-#' @return A list of Date vectors
+#' @return A list of date (in date format) for each person
 #' @export
 #'
 #' @examples
-#' 1+1
+#' beer_dates_string <- list( andrea = c("thursday", "friday"),
+#'  federico = "2023-05-04",
+#'  chiara = c("2023-05-03 / 2023-05-05", "2023-05-10"))
+#'
+#' parse_dates(beer_dates_string)
 #'
 sequence_dates <- function(string){
   date_int <- lubridate::interval(string)
