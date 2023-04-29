@@ -6,13 +6,13 @@
 
 ## Description
 
-StatsandBooze is an R package designed to find the appropriate date among all partecipants for having a beer :beers: (or a diet coke :bubble_tea:). 
-Given a list of partecipants and their availability dates as input, this package may be used to find the common date when all partecipants can be part of the happy hours. 
+StatsandBooze is an R package designed to find the appropriate date among all participants for having a beer :beers: (or a diet coke :bubble_tea:). 
+Given a list of participants and their availability dates as input, this package may be used to find the common date when all partecipants can be part of the happy hours. 
 
 ### Main functions
 
-* <ins>**parse_dates**</ins>: requires as input a list of partecipants with their availability dates. Dates could be expressed in several ways (more details below, Date Format section). It may be used to output a list of all single availability dates in date format for each partecipant.
-* <ins>**decide_happy_hour**</ins>: requires as input a list of dates in date format to find the common availability date among all partecipants.
+* <ins>**parse_dates**</ins>: requires as input a list of participants with their availability of dates. Dates could be expressed in several ways (more details below, Date Format section). It may be used to output a list of all single availability of dates in date format for each participant.
+* <ins>**decide_happy_hour**</ins>: requires as input a list of dates in date format to find the common availabile date among all participants.
 
 
 ## Installation Process
@@ -41,15 +41,15 @@ library(StatsandBooze)
 
 ## Data format
 
-**parse_dates** requires as input a list of partecipants with their availability dates. The dates could be expressed as interval of dates (e.g. "yyyy-mm-dd/yyyy-mm-dd") or names of week days (e.g. "friday") or single dates ("yyyy-mm-dd"). 
-* When you choose to input th dates with the name of week days, you have to use the lowercase. 
+**parse_dates** requires as input a list of participants with their availability of dates. The dates could be expressed as interval of dates (e.g. "yyyy-mm-dd/yyyy-mm-dd") or names of week days (e.g. "friday") or single dates ("yyyy-mm-dd"). 
+* When you choose to input the dates with the name of week days, you have to use the lowercase. 
 * When you want to input interval of dates or single dates, it's just required to use "yyyy-mm-dd".
 
 ## Other details
 
 **parse_dates** involves several functions to transform the input dates:
 * single dates: will be just converted in date format
-* interval dates: will be handled to obtain a sequence of dates given the start date and the end date as input
+* interval dates: will be handled to obtain a sequence of dates given the start-date and the end-date as input
 * names of week day: will be converted in date format (yyyy-mm-dd) by using the date of today as the reference date
 
 ## Examples
@@ -62,7 +62,7 @@ federico = "2023-05-05", chiara = c("wednesday", "thursday"))
 
 parse_dates(beer_dates_string)
 ```
-* To find the common availability date
+* To find the common available date
 
 ``` r
 beer_dates_string <- list( andrea = c("2023-05-02", "2023-05-03 / 2023-05-06"),
