@@ -61,7 +61,10 @@ githubinstall::gh_install_packages("StatsAndBooze")
 To load this package
 
 ``` r
-library(StatsandBooze)
+> library(StatsandBooze)
+
+packageVersion ("StatsandBooze")
+> [1] '0.0.9000'
 ```
 
 
