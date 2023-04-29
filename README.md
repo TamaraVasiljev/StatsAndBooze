@@ -2,41 +2,13 @@
 
 ## Description
 
-> StatsandBooze is an R package designed to handle a specific type of data where the list of authors is associated with the dates. It can be used to find the appropriate date for Happy Hours with the given list. It can be used to handle jointly the available dates from each author. This package allows to specify days of the week instead of numeric dates. This package is more useful for the handling of time and date intervals.
-
-### Features
-``` r
-1. "StatsAndBooze" package can be used to handle the date intervals.
-
-2. It can be used to find the interval sequence of dates.
-
-> sequence_dates <- function(string){
-  date_int <- lubridate::interval(string)
-  date_start <- lubridate::as_date(lubridate::int_start(date_int))
-  date_end <- lubridate::as_date(lubridate::int_end(date_int))
-  sequence_interval <- seq(date_start,date_end,by = "day")
-  return(sequence_interval)
-
-3. It ca be used to transform the days of week into numbers/integers.
-> transform_day_numbers <- function(name_day){
-  as.integer(factor(name_day, levels = c("sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"), ordered = TRUE))
-
-4. It can be used to identify the suitable dates for Aperitif/Beer.
-> parse_dates <- function(x) {
-  lapply(sapply(x, kind_of_dates), lubridate::as_date)
-}
-parse_dates(beer_dates_string)
-
-5. It can be useful to analyze the group chat of any social media platform.
-> For Example **covfefe_chat**
-```
+StatsandBooze is an R package designed to find the appropriate date among all partecipants for having a beer :beers: (or a diet coke :bubble_tea:). 
+Given a list of partecipants and their availability dates as input, this package may be used to find the common date when all partecipants can be part of the happy hours. 
 
 ### Main functions
 
-* **parse_dates**:
-* **decide_happy_hour**:
-* **interval_of_dates**:
-* **date_of_interest**: 
+* <ins>**parse_dates**</ins>: requires as input a list of partecipants with their availability dates. Dates could be expressed in several ways (more details below, Date Format section). It may be used to output a list of all single availability dates in date format for each partecipant.
+* <ins>**decide_happy_hour**</ins>: requires as input a list of dates in date format to find the common availability date among all partecipants.
 
 
 ## Installation Process
@@ -51,6 +23,10 @@ or
 ``` r
 githubinstall::gh_install_packages("StatsAndBooze")
 ```
+#### Required libraries
+
+* *devtools* or *githubinstall*
+* *lubridate*
 
 ## Loading the Package
 To load this package
@@ -59,7 +35,38 @@ To load this package
 library(StatsandBooze)
 ```
 
+## Data format
 
+**parse_dates** requires as input a list of partecipants with their availability dates. The dates could be expressed as interval of dates (e.g. "yyyy-mm-dd/yyyy-mm-dd") or names of week days (e.g. "friday") or single dates ("yyyy-mm-dd"). 
+* When you choose to input th dates with the name of week days, you have to use the lowercase. 
+* When you want to input interval of dates or single dates, it's just required to use "yyyy-mm-dd".
+
+## Other details
+
+**parse_dates** involves several functions to transform the input dates:
+* single dates: will be just converted in date format
+* interval dates: will be handled to obtain a sequence of dates given the start date and the end date as input
+* names of week day: will be converted in date format (yyyy-mm-dd) by using the date of today as the reference date
+
+## Examples
+
+* To transform all the input dates in date format (yyyy-mm-dd)
+
+``` r
+beer_dates_string <- list( andrea = c("2023-05-02", "2023-05-03 / 2023-05-06"),
+federico = "2023-05-05", chiara = c("wednesday", "thursday"))
+
+parse_dates(beer_dates_string)
+```
+* To find the common availability date
+
+``` r
+beer_dates_string <- list( andrea = c("2023-05-02", "2023-05-03 / 2023-05-06"),
+federico = "2023-05-05", chiara = c("wednesday", "thursday"))
+
+beer_dates <- parse_dates(beer_dates_string)
+decide_happy_hour(beer_dates)
+```
 
 ## Contributors
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
