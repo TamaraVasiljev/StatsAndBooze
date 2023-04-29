@@ -1,5 +1,9 @@
 # StatsAndBooze
 
+<!-- badges: start -->
+  [![R-CMD-check](https://github.com/TamaraVasiljev/StatsAndBooze/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/TamaraVasiljev/StatsAndBooze/actions/workflows/R-CMD-check.yaml)
+ <!-- badges: end -->
+
 ## Description
 
 StatsandBooze is an R package designed to find the appropriate date among all partecipants for having a beer :beers: (or a diet coke :bubble_tea:). 
