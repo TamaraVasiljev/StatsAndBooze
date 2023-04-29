@@ -7,7 +7,7 @@
 ## Description
 
 StatsandBooze is an R package designed to find the appropriate date among all participants for having a beer :beers: (or a diet coke :bubble_tea:). 
-Given a list of participants and their availability dates as input, this package may be used to find the common date when all partecipants can be part of the happy hours. 
+Given a list of participants and their availability dates as input, this package may be used to find the common date when all participants can be part of the happy hours. 
 
 ### Main functions
 
@@ -48,13 +48,13 @@ library(StatsandBooze)
 ## Other details
 
 **parse_dates** involves several functions to transform the input dates:
-* single dates: will be just converted in date format
-* interval dates: will be handled to obtain a sequence of dates given the start-date and the end-date as input
-* names of week day: will be converted in date format (yyyy-mm-dd) by using the date of today as the reference date
+* single dates: will be just converted into date format
+* interval dates: will be handled to obtain a sequence of dates given the start date and the end date as input
+* names of week day: will be converted into date format (yyyy-mm-dd) by using the today's date as the reference date
 
 ## Examples
 
-* To transform all the input dates in date format (yyyy-mm-dd)
+* To transform all the input dates into date format (yyyy-mm-dd)
 
 ``` r
 beer_dates_string <- list( andrea = c("2023-05-02", "2023-05-03 / 2023-05-06"),
