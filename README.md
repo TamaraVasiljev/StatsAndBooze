@@ -64,7 +64,7 @@ To load this package
 > library(StatsandBooze)
 
 packageVersion ("StatsandBooze")
-> [1] '0.0.9000'
+> Version: '0.0.0.9000'
 ```
 
 
