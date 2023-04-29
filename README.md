@@ -19,7 +19,8 @@
 
 3. It ca be used to transform the days of week into numbers/integers.
 > transform_day_numbers <- function(name_day){
-  as.integer(factor(name_day, levels = c("sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"), ordered = TRUE))
+  as.integer(factor(name_day, levels = c("sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"),
+  ordered = TRUE))
 
 4. It can be used to identify the suitable dates for Aperitif/Beer.
 > parse_dates <- function(x) {
@@ -35,6 +36,8 @@ parse_dates(beer_dates_string)
 
 * **parse_dates**:
 * **decide_happy_hour**:
+* **interval_of_dates**:
+* **date_of_interest**: 
 
 
 ## Installation Process
