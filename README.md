@@ -10,8 +10,8 @@ StatsandBooze is an R package designed to handle any type of dataset where dates
 
 ### Main functions
 
-* <code> parse_dates </code>:
-* <code> decide_happy_hour </code>:
+* **parse_dates**:
+* **decide_happy_hour**:
 
 ### Other details
 
