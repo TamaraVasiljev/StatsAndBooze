@@ -3,7 +3,9 @@
 ## Description
 
 ``` r
+
 StatsandBooze is an R package designed to handle a specific type of data where the list of authors is associated with the dates. It can be used to find the appropriate date for Happy Hours with the given list. It can be used to handle jointly the available dates from each author. This package allows to specify days of the week instead of numeric dates. This package is more useful for the handling of time and date intervals.
+
 ```
 
 ### Features
