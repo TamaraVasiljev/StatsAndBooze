@@ -7,11 +7,11 @@
 ## Description
 
 StatsandBooze is an R package designed to find the appropriate date among all participants for having a beer :beers: (or a diet coke :bubble_tea:). 
-Given a list of participants and their availability dates as input, this package may be used to find the common date when all participants can be part of the happy hours. 
+Given a list of participants and their available dates as input, this package may be used to find the common date when all participants can be part of the happy hours. 
 
 ### Main functions
 
-* <ins>**parse_dates**</ins>: requires as input a list of participants with their availability of dates. Dates could be expressed in several ways (more details below, Date Format section). It may be used to output a list of all single availability of dates in date format for each participant.
+* <ins>**parse_dates**</ins>: requires as input a list of participants with their availability of dates. Dates could be expressed in several ways (more details below, Date Format section). It may be used to output a list of all single available dates in a date format for each participant.
 * <ins>**decide_happy_hour**</ins>: requires as input a list of dates in date format to find the common availabile date among all participants.
 
 
