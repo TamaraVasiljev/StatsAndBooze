@@ -34,5 +34,5 @@ kind_of_dates <- function(obs){
 }
 
 parse_dates <- function(x) {
-  lapply(sapply(x, kind_of_dates), lubridate::as_date)
+  lapply(lapply(x, kind_of_dates), lubridate::as_date)
 }

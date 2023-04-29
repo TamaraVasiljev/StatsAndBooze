@@ -1,5 +1,5 @@
 test_that("basic parsing works", {
-  my_string_dates<-list(andrea="2023-04-05")
-  my_output<-list(andrea=lubridate::as_date("2023-04-05"))
+  my_string_dates<-list(andrea=c("2023-05-01","2023-05-02 / 2023-05-04"))
+  my_output<-list(andrea=c(lubridate::as_date("2023-05-01"),lubridate::as_date("2023-05-02"),lubridate::as_date("2023-05-03"),lubridate::as_date("2023-05-04")))
   expect_equal(parse_dates(my_string_dates), my_output)
 })
