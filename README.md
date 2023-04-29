@@ -35,8 +35,6 @@ parse_dates(beer_dates_string)
 
 * **parse_dates**:
 * **decide_happy_hour**:
-* **interval_of_dates**:
-* **date_of_interest**: 
 
 
 ## Installation Process
