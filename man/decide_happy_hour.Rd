@@ -16,5 +16,10 @@ The set of common Date(s)
 Decide the best day for an happy hour
 }
 \examples{
-1+1
+beer_dates_string <- list( andrea = c("thursday", "friday"),
+ federico = "2023-05-04",
+ chiara = c("2023-05-03 / 2023-05-05", "2023-05-10"))
+
+dates <- parse_dates(beer_dates_string)
+decide_happy_hour(dates)
 }
