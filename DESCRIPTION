@@ -3,9 +3,9 @@ Title: Find the best day to have a beer!
 Version: 0.0.0.9000
 Authors@R: 
     person("Tamara", "Vasiljev", , "t.vasiljev@campus.unimib.it", role = c("aut", "cre"))
-    person("Valentina", "Zangirolami", , "valentina.zangirolami@gmail.com", role = c("aut"),
+    person("Valentina", "Zangirolami", , "valentina.zangirolami@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0009-0001-2238-7483"))
-    person("Muhammad Amir", "Saeed", , "m.saeed@campus.unimib.it", role = c("aut"))
+    person("Muhammad Amir", "Saeed", , "m.saeed@campus.unimib.it", role = c("aut", "cre"))
 Description: ABC33
 License: MIT + file LICENSE
 Encoding: UTF-8
