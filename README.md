@@ -2,6 +2,10 @@
 
 <!-- badges: start -->
   [![R-CMD-check](https://github.com/TamaraVasiljev/StatsAndBooze/actions/workflows/R-CMD-check.yaml/badge.svg?event=push)](https://github.com/TamaraVasiljev/StatsAndBooze/actions/workflows/R-CMD-check.yaml)
+ ![last-commit](https://img.shields.io/github/last-commit/TamaraVasiljev/StatsAndBooze)
+ ![R](https://img.shields.io/github/languages/top/TamaraVasiljev/StatsAndBooze)
+ ![version](https://img.shields.io/github/r-package/v/TamaraVasiljev/StatsAndBooze)
+ ![contributors](https://img.shields.io/github/contributors/TamaraVasiljev/StatsAndBooze)
  <!-- badges: end -->
 
 ## Description
